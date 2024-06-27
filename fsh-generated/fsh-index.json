@@ -1,0 +1,42 @@
+[
+  {
+    "outputFile": "Medication-TestInstance.json",
+    "fshName": "TestInstance",
+    "fshType": "Instance",
+    "fshFile": "itemReference.fsh",
+    "startLine": 17,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-MyPatient.json",
+    "fshName": "MyPatient",
+    "fshType": "Profile",
+    "fshFile": "circularTest.fsh",
+    "startLine": 4,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-MyPatientChild.json",
+    "fshName": "MyPatientChild",
+    "fshType": "Profile",
+    "fshFile": "circularTest.fsh",
+    "startLine": 10,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-medication.json",
+    "fshName": "MedicationProfile",
+    "fshType": "Profile",
+    "fshFile": "itemReference.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-medicationChild.json",
+    "fshName": "MedicationProfileChild",
+    "fshType": "Profile",
+    "fshFile": "itemReference.fsh",
+    "startLine": 11,
+    "endLine": 15
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medicationChild",
+  "url": "http://example.org/StructureDefinition/medicationChild",
+  "name": "MedicationProfileChild",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://example.org/StructureDefinition/medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.ingredient.item[x]:itemReference",
+        "path": "Medication.ingredient.item[x]",
+        "sliceName": "itemReference",
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

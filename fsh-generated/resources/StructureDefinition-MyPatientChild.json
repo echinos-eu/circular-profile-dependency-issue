@@ -1,0 +1,23 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MyPatientChild",
+  "url": "http://example.org/StructureDefinition/MyPatientChild",
+  "name": "MyPatientChild",
+  "status": "draft",
+  "description": "An example profile of the Patient resource.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://example.org/StructureDefinition/MyPatient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "max": "1"
+      }
+    ]
+  }
+}

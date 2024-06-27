@@ -1,0 +1,40 @@
+{
+  "resourceType": "Medication",
+  "id": "TestInstance",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/medication"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "TestChildInstance",
+      "meta": {
+        "profile": [
+          "http://example.org/StructureDefinition/medicationChild"
+        ]
+      },
+      "ingredient": [
+        {
+          "itemCodeableConcept": {
+            "coding": [
+              {
+                "code": "R01AC01",
+                "system": "http://test.de/CodeSystem",
+                "display": "Natriumcromoglicat"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "ingredient": [
+    {
+      "itemReference": {
+        "reference": "#TestChildInstance"
+      }
+    }
+  ]
+}

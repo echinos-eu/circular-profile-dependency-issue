@@ -1,0 +1,6 @@
+Output File                               Name                    Type      FSH File           Lines
+Medication-TestInstance.json              TestInstance            Instance  itemReference.fsh  17 - 21
+StructureDefinition-MyPatient.json        MyPatient               Profile   circularTest.fsh   4 - 8
+StructureDefinition-MyPatientChild.json   MyPatientChild          Profile   circularTest.fsh   10 - 13
+StructureDefinition-medication.json       MedicationProfile       Profile   itemReference.fsh  1 - 9
+StructureDefinition-medicationChild.json  MedicationProfileChild  Profile   itemReference.fsh  11 - 15
